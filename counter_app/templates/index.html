@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(93, 0, 199);
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            font-family: Press Start 2P,cursive;
+        }
+
+        @keyframes example {
+            0%   {background-color:rgb(104, 1, 1); left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:rgb(104, 1, 1); left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Counter</h2>
+        <p>visited: {{request.session.counter}} times</p>
+    </div>
+</body>
+</html>
